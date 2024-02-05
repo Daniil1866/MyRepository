@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <children>
+      <Label alignment="CENTER" layoutY="40.0" prefHeight="42.0" prefWidth="883.0" text="MenuBar, FlowPane, GridPane, KeyEvent">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="310.0" layoutY="525.0" mnemonicParsing="false" onAction="#panesBarEventContinue" prefHeight="60.0" prefWidth="265.0" text="Continue">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <MenuBar layoutY="1.0" prefHeight="19.0" prefWidth="883.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#newMethod" text="New ">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="UP" meta="DOWN" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <CheckMenuItem mnemonicParsing="false" text="Auto save" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <RadioMenuItem mnemonicParsing="false" text="Option 1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="options" />
+                     </toggleGroup>
+                  </RadioMenuItem>
+                  <RadioMenuItem mnemonicParsing="false" text="Option 2" toggleGroup="$options" />
+                  <RadioMenuItem mnemonicParsing="false" text="Option 3" toggleGroup="$options" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help me!!!">
+            <items>
+              <MenuItem mnemonicParsing="false" text="No" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <FlowPane alignment="TOP_CENTER" columnHalignment="CENTER" hgap="10.0" layoutY="94.0" prefHeight="417.0" prefWidth="384.0" vgap="10.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Button" />
+         </children>
+      </FlowPane>
+      <GridPane gridLinesVisible="true" hgap="10.0" layoutX="524.0" layoutY="94.0" prefHeight="417.0" prefWidth="359.0" vgap="10.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="349.0" minHeight="10.0" prefHeight="137.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="350.0" minHeight="10.0" prefHeight="145.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="164.0" minHeight="10.0" prefHeight="135.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="Button" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+         </children>
+      </GridPane>
+      <Label fx:id="someLabel" alignment="CENTER" layoutX="606.0" layoutY="525.0" prefHeight="60.0" prefWidth="243.0" text="Grid lines are disabled by default, but I enabled them (there are more lines because I set hgap and vgap to 10px)" wrapText="true" />
+      <Label alignment="CENTER" layoutX="35.0" layoutY="525.0" prefHeight="60.0" prefWidth="243.0" text="If you will set the FlowPane as your main pane, try to resize the window to see the changes" wrapText="true" />
+      <Label fx:id="keyLabel" layoutX="39.0" layoutY="458.0" prefHeight="56.0" prefWidth="464.0" text="Since this project has multiple scenes, KeyEvent will be displayed only in the console" wrapText="true">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <children>
+      <Label alignment="CENTER" layoutY="40.0" prefHeight="42.0" prefWidth="883.0" text="Slider">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="310.0" layoutY="525.0" mnemonicParsing="false" onAction="#sliderContinue" prefHeight="60.0" prefWidth="265.0" text="Continue">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Slider fx:id="topSlider" blockIncrement="1.0" layoutX="129.0" layoutY="118.0" minorTickCount="10" prefHeight="38.0" prefWidth="627.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Slider fx:id="rightSlider" blockIncrement="1.0" layoutX="719.0" layoutY="171.0" majorTickUnit="20.0" minorTickCount="5" orientation="VERTICAL" prefHeight="349.0" prefWidth="37.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Slider fx:id="leftSlider" blockIncrement="1.0" layoutX="129.0" layoutY="171.0" majorTickUnit="20.0" minorTickCount="5" orientation="VERTICAL" prefHeight="349.0" prefWidth="37.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Label fx:id="leftSLabel" alignment="CENTER" layoutX="185.0" layoutY="283.0" prefHeight="29.0" prefWidth="508.0" text="Left slider value: ">
+         <font>
+            <Font name="Menlo Regular" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="topSLabel" alignment="CENTER" layoutX="185.0" layoutY="238.0" prefHeight="29.0" prefWidth="508.0" text="Top slider value: ">
+         <font>
+            <Font name="Menlo Regular" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="rightSLabel" alignment="CENTER" layoutX="185.0" layoutY="330.0" prefHeight="29.0" prefWidth="508.0" text="Right slider value: ">
+         <font>
+            <Font name="Menlo Regular" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
